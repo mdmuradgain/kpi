@@ -11,19 +11,19 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'আন্তর্জাতিক সাংস্কৃতিক দিবস ২০২৩', 
             subtitle: 'উপলক্ষে ৮-১৪ ডিসেম্বর', 
             content: 'সাংস্কৃতিক অভিযান',
-            image: 'https://images.unsplash.com/photo-1581093458791-9d09c6d2d6af?auto=format&fit=crop&w=1200&h=600&q=80'
+            image: '/assets/img/b-1.jpg'
         },
         { 
             title: 'ইসলামী শিক্ষা সপ্তাহ', 
             subtitle: '১-৭ নভেম্বর', 
             content: 'জ্ঞান বিতরণ কর্মসূচি',
-            image: 'https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=1200&h=600&q=80'
+            image: '/assets/img/b-2.jpg'
         },
         { 
             title: 'সদস্য সম্মেলন ২০২৩', 
             subtitle: '২৫-২৭ ডিসেম্বর', 
             content: 'একত্রিত হওয়ার আহ্বান',
-            image: 'https://images.unsplash.com/photo-1569407228235-9a744831a150?auto=format&fit=crop&w=1200&h=600&q=80'
+            image: '/assets/img/b-3.jpg'
         },
     ];
 
