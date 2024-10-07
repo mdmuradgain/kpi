@@ -185,3 +185,58 @@ document.addEventListener('DOMContentLoaded', function() {
         renderVideoGallery();
     });
 });
+
+
+
+
+
+// Banner Slider
+const slider = document.getElementById('slider-container');
+const slides = slider.children;
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const playPauseBtn = document.getElementById('play-pause-btn');
+const playIcon = document.getElementById('play-icon');
+const pauseIcon = document.getElementById('pause-icon');
+let currentSlide = 0;
+let autoplayInterval;
+let isPlaying = true;
+
+function showSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    currentSlide = index;
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+function toggleAutoplay() {
+    if (isPlaying) {
+        clearInterval(autoplayInterval);
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+    } else {
+        autoplayInterval = setInterval(nextSlide, 5000);
+        playIcon.classList.add('hidden');
+        pauseIcon.classList.remove('hidden');
+    }
+    isPlaying = !isPlaying;
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+playPauseBtn.addEventListener('click', toggleAutoplay);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
+});
+
+autoplayInterval = setInterval(nextSlide, 9000);
