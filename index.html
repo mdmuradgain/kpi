@@ -58,7 +58,7 @@
       </header>
 
       <nav class="bg-[#0D7EB9] text-white p-4 shadow-md">
-        <div class="container mx-auto">
+        <div class="container mx-auto flex justify-between">
           <button id="menuToggle" class="md:hidden w-full text-left mb-2">
             <i class="fas fa-bars w-6 h-6 inline mr-2"></i>
             মেনু
@@ -269,9 +269,60 @@
               </ul>
             </li>
           </ul>
+          <!-- Social Icon Add Start -->
+          <div class="flex flex-row sm:flex-row items-center justify-center gap-5">
+            <button class="bg-[#D2EFD9] text-black hover:bg-white px-5 py-2 rounded-md text-lg  font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 whitespace-nowrap">
+              সমর্থক হোন
+            </button>
+            <div class="flex space-x-4">
+              <a 
+                href="#" 
+                class="bg-white p-2 rounded-full text-blue-600 hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                aria-label="Facebook"
+              >
+                <!-- Facebook Icon -->
+                <i class="fa-brands fa-facebook fa-lg"></i>
+              </a>
+              <a 
+                href="#" 
+                class="bg-blue-500 p-2 rounded-full text-white hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+                aria-label="Twitter"
+              >
+                <!-- Twitter Icon -->
+                <i class="fa-brands fa-x-twitter fa-lg"></i>
+              </a>
+              <a 
+                href="#" 
+                class="bg-red-600 p-2 rounded-full text-white hover:bg-red-700 transition-all duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+                aria-label="YouTube"
+              >
+                <!-- YouTube Icon -->
+                <i class="fab fa-youtube fa-lg"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Social Icon Add End -->
         </div>
       </nav>
     </div>
+
+    <!-- Breaking News -->
+    <div class="bg-[#0d7db948] text-black py-2 overflow-hidden">
+      <div class="container mx-auto flex items-center">
+        <button
+          class="bg-white text-[#0D7EB9] px-4 py-2 transition-colors duration-300 mr-3 whitespace-nowrap"
+        >
+          সর্বশেষ সংবাদ:
+        </button>
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" class="whitespace-nowrap cursor-pointer text-[#0D7EB9]">
+          বাংলাদেশে নতুন শিক্ষা নীতি চালু হচ্ছে আগামী মাসে • আন্তর্জাতিক ইসলামী
+          সম্মেলনে বাংলাদেশের প্রতিনিধিদল যোগদান করবে • ছাত্র শিবির আয়োজিত
+        </marquee>
+      </div>
+    </div>
+    <!-- Breaking End -->
+
     <!-- Banner Slider Start -->
     <div
       class="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-cover object-cover"
@@ -412,20 +463,6 @@
     </div>
     <!-- Banner Slider End -->
 
-    <div class="bg-[#0d7db948] text-black py-2 overflow-hidden">
-      <div class="container mx-auto flex items-center">
-        <button
-          class="bg-white text-red-600 px-4 py-2 hover:bg-red-100 transition-colors duration-300 mr-9"
-        >
-          সর্বশেষ:
-        </button>
-        <marquee behavior="scroll" direction="left" class="whitespace-nowrap">
-          বাংলাদেশে নতুন শিক্ষা নীতি চালু হচ্ছে আগামী মাসে • আন্তর্জাতিক ইসলামী
-          সম্মেলনে বাংলাদেশের প্রতিনিধিদল যোগদান করবে • ছাত্র শিবির আয়োজিত
-        </marquee>
-      </div>
-    </div>
-
     <main class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="md:col-span-2">
         <div class="bg-white p-4 rounded-lg shadow-lg overflow-hidden">
@@ -451,7 +488,7 @@
       </div>
 
       <div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-[#b2d2e534] p-6 rounded-lg shadow-lg">
           <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">
             শহীদ পরিচিতি
           </h2>
@@ -636,7 +673,7 @@
     </div>
     <!--  -->
 
-    <footer class="bg-gray-800 text-white py-12 text-center sm:text-start">
+    <footer class="bg-gray-800 text-white pt-12 text-center sm:text-start">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 class="text-xl font-semibold mb-4 border-b pb-2">
@@ -729,7 +766,7 @@
           </div>
         </div>
       </div>
-      <div class="border-t border-gray-700 text-center">
+      <div class="bg-[#0D7EB9] text-center p-3 mt-5">
         <p>&copy; ২০২৩ বাংলাদেশ ইসলামী ছাত্রশিবির। সর্বস্বত্ব সংরক্ষিত।</p>
       </div>
     </footer>

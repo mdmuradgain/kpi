@@ -35,25 +35,33 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const photoGallery = [
-        { image: 'https://images.unsplash.com/photo-1581093458791-9d09c6d2d6af?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ১' },
-        { image: 'https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ২' },
-        { image: 'https://images.unsplash.com/photo-1569407228235-9a744831a150?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৩' },
-        { image: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৪' },
-        { image: 'https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৫' },
-        { image: 'https://images.unsplash.com/photo-1569407228235-9a744831a150?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৬' },
-        { image: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৭' },
-        { image: 'https://images.unsplash.com/photo-1581093458791-9d09c6d2d6af?auto=format&fit=crop&w=300&h=200&q=80', title: 'ছবি ৮' },
+        { image: '/assets/img/photo_gallery/Artboard 1-100.jpg', title: 'ছবি ১' },
+        { image: '/assets/img/photo_gallery/Artboard 2-100.jpg', title: 'ছবি ২' },
+        { image: '/assets/img/photo_gallery/Artboard 3-100.jpg', title: 'ছবি 3' },
+        { image: '/assets/img/photo_gallery/Artboard 4-100.jpg', title: 'ছবি 4' },
+        { image: '/assets/img/photo_gallery/Artboard 5-100.jpg', title: 'ছবি 5' },
+        { image: '/assets/img/photo_gallery/Artboard 6-100.jpg', title: 'ছবি 6' },
+        { image: '/assets/img/photo_gallery/Artboard 7-100.jpg', title: 'ছবি 7' },
+        { image: '/assets/img/photo_gallery/Artboard 8-100.jpg', title: 'ছবি 8' },
+        { image: '/assets/img/photo_gallery/Artboard 9-100.jpg', title: 'ছবি 9' },
+        { image: '/assets/img/photo_gallery/Artboard 10-100.jpg', title: 'ছবি 10' },
+        { image: '/assets/img/photo_gallery/Artboard 11-100.jpg', title: 'ছবি 11' },
+        { image: '/assets/img/photo_gallery/Artboard 12-100.jpg', title: 'ছবি 12' },
+        { image: '/assets/img/photo_gallery/Artboard 13-100.jpg', title: 'ছবি 13' },
+        { image: '/assets/img/photo_gallery/Artboard 14-100.jpg', title: 'ছবি 14' },
+        { image: '/assets/img/photo_gallery/Artboard 15-100.jpg', title: 'ছবি 15' },
+        { image: '/assets/img/photo_gallery/Artboard 15-100.jpg', title: 'ছবি 16' },
+        { image: '/assets/img/photo_gallery/Artboard 17-100.jpg', title: 'ছবি 17' },
+        { image: '/assets/img/photo_gallery/Artboard 18-100.jpg', title: 'ছবি 18' },
+        { image: '/assets/img/photo_gallery/Artboard 19-100.jpg', title: 'ছবি 19' },
+        { image: '/assets/img/photo_gallery/Artboard 20-100.jpg', title: 'ছবি 20' },
     ];
 
     const videoGallery = [
-        { thumbnail: 'https://images.unsplash.com/photo-1581093458791-9d09c6d2d6af?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ১' },
-        { thumbnail: 'https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ২' },
-        { thumbnail: 'https://images.unsplash.com/photo-1569407228235-9a744831a150?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৩' },
-        { thumbnail: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৪' },
-        { thumbnail: 'https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৫' },
-        { thumbnail: 'https://images.unsplash.com/photo-1569407228235-9a744831a150?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৬' },
-        { thumbnail: 'https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৭' },
-        { thumbnail: 'https://images.unsplash.com/photo-1581093458791-9d09c6d2d6af?auto=format&fit=crop&w=300&h=200&q=80', title: 'ভিডিও ৮' },
+        { id: '2gqsGP__zVE', title: 'তরুণ যুবক এসো শিবিরের প্রতিষ্ঠাবার্ষিকীর গান Tarun Jubak Eso Founding Anniversary Song' },
+        { id: 'rLt6Imqc88Q', title: 'ভিডিও ২' },
+        { id: 'RkpzBTB4e_8', title: 'ভিডিও ৩' },
+        { id: 'el9k-qkRc7k', title: 'ভিডিও ৩' },
     ];
 
     // Initialize slider
@@ -156,15 +164,16 @@ document.addEventListener('DOMContentLoaded', function() {
             slideElement.className = 'w-full flex-shrink-0 grid grid-cols-2 md:grid-cols-4 gap-4';
             videoGallery.slice(i * 4, i * 4 + 4).forEach(video => {
                 const videoElement = document.createElement('div');
-                videoElement.className = 'bg-gray-200 rounded-lg overflow-hidden relative';
+                videoElement.className = 'bg-gray-200 overflow-hidden relative';
                 videoElement.innerHTML = `
-                    <img src="${video.thumbnail}" alt="${video.title}" class="object-cover w-full h-full">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                            <div class="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-green-600 border-b-8 border-b-transparent ml-1"></div>
-                        </div>
-                    </div>
-                    <p class="mt-2 text-center text-gray-700">${video.title}</p>
+                    <iframe
+                        width="100%"
+                        height="300"
+                        src="https://www.youtube.com/embed/${video.id}"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
                 `;
                 slideElement.appendChild(videoElement);
             });
